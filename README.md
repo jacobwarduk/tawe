@@ -7,4 +7,4 @@ Instructions
 
 3. From the command line run `npm start`.
 
-4. Visit http://localhost:3000 in a web browser.
+4. Visit [http://localhost:3000](http://localhost:3000) in a web browser.
