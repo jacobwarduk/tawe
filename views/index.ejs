@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
+        <title><%= title %></title>
+        <meta name="description" content="<%= description %>" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/styles/tawe.min.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+        <script src="/scripts/tawe.min.js"></script>
+    </head>
+    <body>
+        <h1><%= title %></h1>
+        <p><%= description %></p>
 
-    <title><%= title %></title>
-    <meta name="description" content="<%= description %>" />
-
-    <link rel="stylesheet" href="/styles/tawe.min.css" />
-
-    <script src="/scripts/tawe.min.js"></script>
-
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p><%= description %></p>
-  </body>
+        <footer>
+            <div class="social-media">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="sparkol-account-link">
+                <a href="#">Sparkol Account</a>
+            </div>
+            <div class="contact-details">
+                <p class="company-info">&copy; 2015 Sparkol Limited, registered in England and Wales, no 06762963</p>
+                <address>Unit 2, Yeo Bank Business Park, Clevedon, BS21 6UW, UK</address>
+                <p class="privacy"><a href="#">Privacy and cookies</a></p>
+            </div>
+        </footer>
+    </body>
 </html>

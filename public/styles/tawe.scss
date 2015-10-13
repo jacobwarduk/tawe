@@ -1,7 +1,10 @@
-@import 'reset';    // Importing _reset.scss
-
-
 $orange: #f57a20;
+$red: #f1574c;
+$grey-text: #474747;
+$grey-bg-dark: #353535;
+$grey-bg-light: #3f3f3f;
+$grey-bg-pale: #f4f4f4;
+$white: #fff;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -10,7 +13,36 @@ $orange: #f57a20;
           border-radius: $radius;
 }
 
+
+
+html,
+body,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+
 .button {
+    font-weight: bold;
     @include border-radius(5px);
     background-color: $orange;
+
+}
+
+
+footer {
+    background-color: $grey-bg-dark;
+
+    .sparkol-account-link a {
+        color: $white;
+        text-decoration: none;
+        border-bottom: 1px dashed $white;
+    }
+
+}
+
+.social-media a i {
+    color: $white;
 }

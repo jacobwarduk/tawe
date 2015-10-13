@@ -1,8 +1,21 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+html, body, ul, ol {
+  margin: 0;
+  padding: 0; }
 
-a {
-  color: #00B7FF;
-}
+.button {
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #f57a20; }
+
+footer {
+  background-color: #353535; }
+  footer .sparkol-account-link a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dashed white; }
+
+.social-media a i {
+  color: white; }
