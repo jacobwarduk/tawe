@@ -17,7 +17,7 @@ html {
   font-size: 1em;
   color: #5f5f5f; }
 
-p, h2 {
+p, h2, section {
   text-align: center;
   color: #5f5f5f; }
 
@@ -27,6 +27,9 @@ a {
 
 section {
   padding: 0 15%; }
+  section h2 {
+    font-weight: 500;
+    font-size: 200%; }
 
 /* Clear floats */
 .clear {
@@ -117,25 +120,26 @@ section.tawe-overview {
     font-size: 300%;
     margin-top: 50px; }
   section.tawe-overview p {
-    padding: 50px 0 10px 0; }
+    padding: 25px 0; }
   section.tawe-overview .tawe-screen img {
     display: block;
-    margin: 50px auto 0 auto;
+    margin: 50px auto 25px auto;
     max-width: 70%; }
 
 /* Tawe video section */
 section.tawe-video {
-  background-color: #f4f4f4;
-  text-align: center; }
+  background-color: #f4f4f4; }
   section.tawe-video i.fa {
     font-size: 300%;
     font-weight: 900; }
   section.tawe-video iframe {
-    max-width: 70%; }
+    max-width: 70%;
+    border: 0;
+    margin-bottom: 25px; }
   section.tawe-video p.tawe-description {
     font-weight: 900;
     font-size: 150%;
-    padding: 0; }
+    padding: 20px 0; }
   section.tawe-video hr {
     height: 0px;
     width: 50%;
@@ -143,34 +147,31 @@ section.tawe-video {
     border: 0;
     border-bottom: 3px solid #f57a20; }
   section.tawe-video h2 {
-    font-weight: 500;
-    font-size: 200%;
     background-color: #f4f4f4; }
   section.tawe-video p {
-    padding: 10px 0 50px 0; }
+    padding: 10px 0 25px 0; }
 
 /* Tawe love section */
-section.tawe-love {
-  background-color: white !important; }
-  section.tawe-love h2 {
-    font-weight: 500;
-    font-size: 200%;
-    background-color: white; }
+section.tawe-unlock {
+  background-color: #f4f4f4; }
+  section.tawe-unlock h2 {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 30px 0 10px 0; }
+  section.tawe-unlock h2 + p {
+    font-weight: 900;
+    background-color: #f4f4f4; }
+  section.tawe-unlock p {
+    padding: 0 0 30px 0; }
 
 /* Tawe community section */
 section.tawe-community {
   background-color: #3f3f3f;
-  padding: 3px 0 30px 0;
-  text-align: center; }
+  padding: 3px 0 30px 0; }
   section.tawe-community h2 {
-    font-weight: 500;
-    font-size: 200%;
     background-color: #3f3f3f;
-    color: white; }
-
-/* Tawe love section */
-section.tawe-love {
-  background-color: #f4f4f4; }
+    color: white;
+    margin-bottom: 0px; }
 
 /* Tawe mobile section */
 section.tawe-mobile {
@@ -178,7 +179,14 @@ section.tawe-mobile {
 
 /* Tawe Sparkol section */
 section.tawe-sparkol {
-  background-color: #353535; }
+  background-color: #353535;
+  color: white;
+  padding: 5px 0 0 0; }
+  section.tawe-sparkol h2 {
+    color: white;
+    background-color: #353535; }
+  section.tawe-sparkol p {
+    padding-bottom: 25px; }
 
 /* Tawe products section */
 section.tawe-products {
@@ -196,9 +204,12 @@ section.tawe-products {
   color: white;
   text-decoration: none;
   text-align: center;
-  min-width: 300px;
   padding: 15px;
-  line-height: 92px; }
+  margin: 0 auto;
+  color: white;
+  display: block;
+  width: 300px;
+  max-width: 70%; }
 
 .orange-button {
   background-color: #f57a20; }
@@ -221,7 +232,16 @@ footer {
   footer a {
     color: white;
     text-decoration: none; }
-  footer .sparkol-account-link a {
+  footer p {
     color: white;
-    text-decoration: none;
-    border-bottom: 1px dashed white; }
+    font-size: 70%; }
+  footer address {
+    font-style: normal;
+    font-size: 70%; }
+  footer .sparkol-account-link {
+    padding: 10px 0px 20px 0px; }
+    footer .sparkol-account-link a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px dashed white;
+      font-size: 70%; }
