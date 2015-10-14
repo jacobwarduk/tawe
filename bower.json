@@ -2,6 +2,7 @@
     "name": "tawe",
     "version": "1.0.0",
     "dependencies": {
-        "font-awesome": "latest"
+        "font-awesome": "latest",
+        "jquery": "latest"
     }
 }

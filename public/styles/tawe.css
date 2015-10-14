@@ -56,14 +56,6 @@ header {
         color: #3f3f3f; }
   header .menu {
     float: right; }
-    header .menu .menu-icon {
-      display: none;
-      width: 100%;
-      text-align: center; }
-      header .menu .menu-icon a {
-        color: #5f5f5f; }
-        header .menu .menu-icon a:hover {
-          color: #3f3f3f; }
     header .menu nav {
       padding-top: 30px; }
       header .menu nav ul {
@@ -82,33 +74,45 @@ header {
             font-weight: 900; }
             header .menu nav ul li a:hover {
               color: #3f3f3f; }
+  header .menu-icon {
+    display: none; }
 
 @media only screen and (max-width: 767px) {
   header h1 {
-    float: right; }
+    float: left;
+    width: 110px; }
   header .menu {
-    max-height: 0;
+    max-height: 0px;
     overflow: hidden;
-    float: none;
+    float: right;
     text-align: center;
     width: 100%;
     -webkit-transition: max-height 0.5s;
     -moz-transition: max-height 0.5s;
     transition: max-height 0.5s; }
-    header .menu:menu-open {
-      max-height: 1000px;
-      -webkit-transition: max-height 0.5s;
-      -moz-transition: max-height 0.5s;
-      transition: max-height 0.5s; }
-    header .menu nav ul li {
-      display: block;
-      width: 100%;
-      border-top: 1px solid #f4f4f4; }
-      header .menu nav ul li a {
-        width: 100%; }
-    header .menu .menu-icon {
-      display: inline-block; }
-      header .menu .menu-icon a i {
+    header .menu nav ul {
+      float: none; }
+      header .menu nav ul li {
+        display: block;
+        width: 100%;
+        border-top: 1px solid #f4f4f4; }
+        header .menu nav ul li a {
+          width: 100%; }
+  header .menu-open {
+    max-height: 1000px;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s; }
+  header .menu-icon {
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+    cursor: pointer; }
+    header .menu-icon a {
+      color: #f57a20; }
+      header .menu-icon a:hover {
+        color: #3f3f3f; }
+      header .menu-icon a i {
         font-size: 200%; } }
 
 /* Tawe overview section */
@@ -133,7 +137,7 @@ section.tawe-video {
     font-size: 300%;
     font-weight: 900; }
   section.tawe-video iframe {
-    max-width: 70%;
+    max-width: 90%;
     border: 0;
     margin-bottom: 25px; }
   section.tawe-video p.tawe-description {
@@ -153,6 +157,8 @@ section.tawe-video {
 
 /* Tawe love section */
 section.tawe-unlock {
+  max-width: 100%;
+  padding: 0 10%;
   background-color: #f4f4f4; }
   section.tawe-unlock h2 {
     background-color: #f4f4f4;
@@ -163,6 +169,10 @@ section.tawe-unlock {
     background-color: #f4f4f4; }
   section.tawe-unlock p {
     padding: 0 0 30px 0; }
+  section.tawe-unlock .love-item {
+    display: inline-block;
+    float: left;
+    padding: 10px; }
 
 /* Tawe community section */
 section.tawe-community {

@@ -98,19 +98,6 @@ header {
     .menu {
         float: right;
 
-        .menu-icon {
-            display: none;
-            width: 100%;
-            text-align: center;
-
-            a {
-                color: $grey-text;
-                &:hover {
-                    color: $grey-light;
-                }
-            }
-        }
-
         nav {
         padding-top: 30px;
 
@@ -138,30 +125,32 @@ header {
             }
         }
     }
+
+    .menu-icon {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 767px) {
     header {
 
         h1 {
-            float: right;
+            float: left;
+            width: 110px;
         }
 
         .menu {
-            max-height: 0;
+            max-height: 0px;
             overflow: hidden;
-            float: none;
+            float: right;
             text-align: center;
             width: 100%;
             @include transition(max-height, 0.5s);
 
-            &:menu-open {
-                max-height: 1000px;
-                @include transition(max-height, 0.5s);
-            }
-
             nav {
                 ul {
+                    float: none;
+
                     li {
                         display: block;
                         width: 100%;
@@ -173,14 +162,27 @@ header {
                     }
                 }
             }
+        }
 
-            .menu-icon {
-                display: inline-block;
+        .menu-open {
+            max-height: 1000px;
+            @include transition(max-height, 0.5s);
+        }
 
-                a {
-                    i {
-                        font-size: 200%;
-                    }
+        .menu-icon {
+            display: inline-block;
+            float: right;
+            margin-top: 30px;
+            cursor: pointer;
+
+            a {
+                color: $orange;
+                &:hover {
+                    color: $grey-light;
+                }
+
+                i {
+                    font-size: 200%;
                 }
             }
         }
@@ -221,7 +223,7 @@ section.tawe-video {
     }
 
     iframe {
-        max-width: 70%;
+        max-width: 90%;
         border: 0;
         margin-bottom: 25px;
     }
@@ -251,6 +253,8 @@ section.tawe-video {
 
 /* Tawe love section */
 section.tawe-unlock {
+    max-width: 100%;
+    padding: 0 10%;
     background-color: $grey-pale;
 
     h2 {
@@ -266,6 +270,12 @@ section.tawe-unlock {
 
     p {
         padding: 0 0 30px 0;
+    }
+
+    .love-item {
+        display: inline-block;
+        float: left;
+        padding: 10px;
     }
 }
 
