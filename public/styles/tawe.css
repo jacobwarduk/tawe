@@ -1,21 +1,227 @@
-html, body, ul, ol {
+/* Color pallette variables */
+/* Custom fonts */
+@font-face {
+  font-family: OpenSansCond;
+  src: url('/libs/OpenSans-CondLight.ttf'); }
+
+/* Border radius mixin */
+/* Transition mixin */
+/* Reset */
+html, body, ul, ol, p {
   margin: 0;
   padding: 0; }
 
+/* Default font */
+html {
+  font-family: "OpenSansCond", sans-serif;
+  font-size: 1em;
+  color: #5f5f5f; }
+
+p, h2 {
+  text-align: center;
+  color: #5f5f5f; }
+
+a {
+  color: #f57a20;
+  text-decoration: none; }
+
+section {
+  padding: 0 15%; }
+
+/* Clear floats */
+.clear {
+  clear: both; }
+
+/* Header and responsive menu */
+header {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto; }
+  header h1 {
+    background-image: url('/images/tawe-logo.png');
+    background-repeat: no-repeat;
+    padding-left: 48px;
+    height: 48px;
+    float: left;
+    font-weight: 700;
+    font-size: 34px; }
+    header h1 a {
+      text-decoration: none;
+      color: #5f5f5f;
+      vertical-align: middle; }
+      header h1 a:hover {
+        color: #3f3f3f; }
+  header .menu {
+    float: right; }
+    header .menu .menu-icon {
+      display: none;
+      width: 100%;
+      text-align: center; }
+      header .menu .menu-icon a {
+        color: #5f5f5f; }
+        header .menu .menu-icon a:hover {
+          color: #3f3f3f; }
+    header .menu nav {
+      padding-top: 30px; }
+      header .menu nav ul {
+        float: right;
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        header .menu nav ul li {
+          display: inline-block;
+          float: left; }
+          header .menu nav ul li a {
+            display: block;
+            padding: 6px 12px;
+            text-decoration: none;
+            color: #5f5f5f;
+            font-weight: 900; }
+            header .menu nav ul li a:hover {
+              color: #3f3f3f; }
+
+@media only screen and (max-width: 767px) {
+  header h1 {
+    float: right; }
+  header .menu {
+    max-height: 0;
+    overflow: hidden;
+    float: none;
+    text-align: center;
+    width: 100%;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s; }
+    header .menu:menu-open {
+      max-height: 1000px;
+      -webkit-transition: max-height 0.5s;
+      -moz-transition: max-height 0.5s;
+      transition: max-height 0.5s; }
+    header .menu nav ul li {
+      display: block;
+      width: 100%;
+      border-top: 1px solid #f4f4f4; }
+      header .menu nav ul li a {
+        width: 100%; }
+    header .menu .menu-icon {
+      display: inline-block; }
+      header .menu .menu-icon a i {
+        font-size: 200%; } }
+
+/* Tawe overview section */
+section.tawe-overview {
+  background-color: white;
+  border-top: 1px solid #d0d0d0; }
+  section.tawe-overview h2 {
+    font-weight: 100;
+    font-size: 300%;
+    margin-top: 50px; }
+  section.tawe-overview p {
+    padding: 50px 0 10px 0; }
+  section.tawe-overview .tawe-screen img {
+    display: block;
+    margin: 50px auto 0 auto;
+    max-width: 70%; }
+
+/* Tawe video section */
+section.tawe-video {
+  background-color: #f4f4f4;
+  text-align: center; }
+  section.tawe-video i.fa {
+    font-size: 300%;
+    font-weight: 900; }
+  section.tawe-video iframe {
+    max-width: 70%; }
+  section.tawe-video p.tawe-description {
+    font-weight: 900;
+    font-size: 150%;
+    padding: 0; }
+  section.tawe-video hr {
+    height: 0px;
+    width: 50%;
+    color: #f57a20;
+    border: 0;
+    border-bottom: 3px solid #f57a20; }
+  section.tawe-video h2 {
+    font-weight: 500;
+    font-size: 200%;
+    background-color: #f4f4f4; }
+  section.tawe-video p {
+    padding: 10px 0 50px 0; }
+
+/* Tawe love section */
+section.tawe-love {
+  background-color: white !important; }
+  section.tawe-love h2 {
+    font-weight: 500;
+    font-size: 200%;
+    background-color: white; }
+
+/* Tawe community section */
+section.tawe-community {
+  background-color: #3f3f3f;
+  padding: 3px 0 30px 0;
+  text-align: center; }
+  section.tawe-community h2 {
+    font-weight: 500;
+    font-size: 200%;
+    background-color: #3f3f3f;
+    color: white; }
+
+/* Tawe love section */
+section.tawe-love {
+  background-color: #f4f4f4; }
+
+/* Tawe mobile section */
+section.tawe-mobile {
+  background-color: white; }
+
+/* Tawe Sparkol section */
+section.tawe-sparkol {
+  background-color: #353535; }
+
+/* Tawe products section */
+section.tawe-products {
+  background-color: #3f3f3f; }
+
+/* Buttons */
 .button {
-  font-weight: bold;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
+  font-size: 120%;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  min-width: 300px;
+  padding: 15px;
+  line-height: 92px; }
+
+.orange-button {
   background-color: #f57a20; }
 
+.red-button {
+  background-color: #f1574c; }
+
+/* Social media */
+.social-media a i {
+  color: white;
+  font-size: 200%;
+  margin: 25px; }
+
+/* Footer and contact details */
 footer {
-  background-color: #353535; }
+  background-color: #353535;
+  color: white;
+  text-align: center;
+  padding: 0 0 50px 0; }
+  footer a {
+    color: white;
+    text-decoration: none; }
   footer .sparkol-account-link a {
     color: white;
     text-decoration: none;
     border-bottom: 1px dashed white; }
-
-.social-media a i {
-  color: white; }
