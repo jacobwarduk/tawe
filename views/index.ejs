@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <title><%= title %></title>
+
         <meta name="description" content="<%= description %>" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <link rel="stylesheet" href="/styles/tawe.min.css" />
         <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+
         <script src="/scripts/tawe.min.js"></script>
+
     </head>
     <body>
 
@@ -150,19 +155,19 @@
         <div class="clear"></div>
 
         <section class="tawe-mobile">
-            <header>
-                <h2>Want Tawe on the go?</h2>
-            </header>
 
-            TABLET IMAGE
+            <div class="tablet-image"><img src="/images/tablet-image.png" alt="Tawe tablet image" /></div>
 
-            <p>
+            <p class="tawe-app-info">
+                <span class="tawe-on-the-go">Want Tawe on the go?</span>
+                <br />
                 Tawe's also available as a free-to-download app for iPhone, iPad or Android. It has all the great features of the free desktop version - and it's just as fast.
-                APPSTORE IMAGE
-                ANDROID IMAGE
+                <br />
+                <a href="#"><img src="/images/download-appstore.png" alt="Download the Tawe mobile app from the Apple Appstore" /></a>
+                <a href="#"><img src="/images/download-googleplay.png" alt="Download the Tawe mobile app from Google Play" /></a>
             </p>
 
-            MOBILE IMAGE
+            <div class="mobile-image"><img src="/images/mobile-image.png" alt="Tawe mobile image" /></div>
 
         </section>
 
@@ -170,10 +175,25 @@
 
         <section class="tawe-sparkol">
             <header>
-                <h2><img src="sparkol-engage.png" alt="Sparkol - Engage your audience" /></h2>
+                <h2><img src="/images/sparkol-engage.png" alt="Sparkol - Engage your audience" /></h2>
             </header>
 
-            VIDEO SCRIBE IMAGE + TAWE IMAGE
+            <div class="videoscribe-subscription">
+                <img src="/images/videoscribe-image.png" alt="VideoScribe logo" />
+                <br />
+                <span class="subscription-title">VideoScribe</span>
+                <p>Create your own whiteboard videos, fast</p>
+            </div>
+
+            <div class="plus"><i class="fa fa-plus"></i></div>
+
+            <div class="tawe-subscription">
+                <img src="/images/tawe-image.png" "Tawe logo" />
+                <br />
+                <span class="subscription-title">Tawe</span>
+                <p>Transform visual ideas into video instantly</p>
+            </div>
+
 
             <p>
                 <a href="#" class="button red-button">Get a Sparkol subscription</a>
@@ -185,7 +205,7 @@
         <div class="clear"></div>
 
         <section class="tawe-products">
-            <div>
+            <div class="tawe-product">
                 <h3>VideoScribe Anywhere</h3>
                 <p>Mobile scribing magic</p>
             </div>

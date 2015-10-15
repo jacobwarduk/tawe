@@ -256,6 +256,7 @@ section.tawe-unlock {
     max-width: 100%;
     padding: 0 10%;
     background-color: $grey-pale;
+    text-align: center;
 
     h2 {
         background-color: $grey-pale;
@@ -274,8 +275,17 @@ section.tawe-unlock {
 
     .love-item {
         display: inline-block;
-        float: left;
         padding: 10px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .love-item {
+            max-width: 25%;
+
+            img {
+                max-width: 25%;
+            }
+        }
     }
 }
 
@@ -294,6 +304,63 @@ section.tawe-community {
 /* Tawe mobile section */
 section.tawe-mobile {
     background-color: $white;
+    padding: 1% 5%;
+
+    header {
+            display: inline-block;
+        h2 {
+            display: inline-block;
+        }
+    }
+
+    .tablet-image {
+        width: 30%;
+        float: left;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .tawe-app-info {
+        width: 40%;
+        display: inline-block;
+        float: left;
+        vertical-align: middle;
+
+        .tawe-on-the-go {
+            text-align: center;
+            color: $grey-text;
+            font-weight: 500;
+            font-size: 200%;
+        }
+
+        img {
+            margin: 15px;
+        }
+    }
+
+    .mobile-image {
+        width: 30%;
+        float: right;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .tablet-image {
+            display: none;
+        }
+        .tawe-app-info {
+            float: none;
+            width: 90%;
+        }
+        .mobile-image {
+            display: none;
+        }
+    }
 }
 
 /* Tawe Sparkol section */
@@ -307,8 +374,18 @@ section.tawe-sparkol {
         background-color: $grey-dark;
     }
 
+    .subscription-title {
+        font-weight: 700;
+        font-size: 135%;
+    }
+
+    .plus {
+        font-size: 250%;
+    }
+
     p {
         padding-bottom: 25px;
+        color: $white;
     }
 }
 
