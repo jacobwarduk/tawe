@@ -89,6 +89,7 @@ header {
     width: 100%;
     -webkit-transition: max-height 0.5s;
     -moz-transition: max-height 0.5s;
+    -ms-transition: max-height 0.5s;
     transition: max-height 0.5s; }
     header .menu nav ul {
       float: none; }
@@ -102,6 +103,7 @@ header {
     max-height: 1000px;
     -webkit-transition: max-height 0.5s;
     -moz-transition: max-height 0.5s;
+    -ms-transition: max-height 0.5s;
     transition: max-height 0.5s; }
   header .menu-icon {
     display: inline-block;
@@ -136,8 +138,19 @@ section.tawe-video {
   section.tawe-video i.fa {
     font-size: 300%;
     font-weight: 900; }
+  section.tawe-video .video-wrapper {
+    margin: 0 auto;
+    width: 85%;
+    position: relative;
+    padding-bottom: 50.5%;
+    padding-top: 25px;
+    height: 0; }
   section.tawe-video iframe {
-    max-width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border: 0;
     margin-bottom: 25px; }
   section.tawe-video p.tawe-description {
@@ -177,7 +190,7 @@ section.tawe-unlock {
     section.tawe-unlock .love-item {
       max-width: 25%; }
       section.tawe-unlock .love-item img {
-        max-width: 25%; } }
+        max-width: 100%; } }
 
 /* Tawe community section */
 section.tawe-community {
@@ -238,15 +251,44 @@ section.tawe-sparkol {
   section.tawe-sparkol .subscription-title {
     font-weight: 700;
     font-size: 135%; }
-  section.tawe-sparkol .plus {
-    font-size: 250%; }
+  section.tawe-sparkol .subscription-apps {
+    display: inline-block; }
+    section.tawe-sparkol .subscription-apps .videoscribe-subscription {
+      float: left; }
+    section.tawe-sparkol .subscription-apps .plus {
+      font-size: 250%;
+      float: left; }
+    section.tawe-sparkol .subscription-apps .tawe-subscription {
+      float: left; }
+    @media only screen and (max-width: 500px) {
+      section.tawe-sparkol .subscription-apps .videoscribe-subscription {
+        float: none;
+        display: block; }
+      section.tawe-sparkol .subscription-apps .plus {
+        float: none;
+        display: block; }
+      section.tawe-sparkol .subscription-apps .tawe-subscription {
+        float: none;
+        display: block; } }
   section.tawe-sparkol p {
     padding-bottom: 25px;
     color: white; }
 
 /* Tawe products section */
 section.tawe-products {
-  background-color: #3f3f3f; }
+  background-color: #3f3f3f;
+  color: white;
+  padding: 0 0 30px 0; }
+  section.tawe-products .product-info {
+    display: inline-block; }
+    section.tawe-products .product-info .tawe-product {
+      padding: 10px;
+      float: left; }
+      section.tawe-products .product-info .tawe-product .product-title {
+        font-weight: 700;
+        font-size: 135%; }
+      section.tawe-products .product-info .tawe-product p {
+        color: white; }
 
 /* Buttons */
 .button {
