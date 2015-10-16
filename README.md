@@ -3,9 +3,9 @@ Instructions
 
 1. Change to the tawe root directory.
 
-2. From the command line run `mysql -u username -p password < tawe_testimonials.sql` (where `username` is your username and `password` is your password) to create and populate the required database and tables.
+2. From the command line run `mysql -u username -p password < tawe_testimonials.sql` (where `username` is your MySQL username and `password` is your MySQL password) to create and populate the required database and tables.
 
-3. Add MySQL database connection details to lines 7 to 10 in `index.js`.
+3. Add MySQL database connection details to lines 7-10 in `index.js`.
 
 4. From the command line run `npm start`.
 
@@ -21,4 +21,4 @@ When I tried to open the `DesignAssets.psd` file, it would only open as a flat i
  - I didn't have the individual images, so have had to crop them out, hence backgrounds and unoptimised file sizes.
  - I couldn't make accurate measurements between elements, so have done it 'by eye'.
 
-I wasn't sure whether frameworks like Bootstrap, Foundation, jQuery, etc... were allowed, so it's vanilla HTML/CSS/JS.
+I wasn't sure whether frameworks/libraries like Bootstrap, Foundation, jQuery, etc... were allowed, so it's vanilla HTML/CSS/JS.

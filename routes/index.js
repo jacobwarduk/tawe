@@ -27,10 +27,12 @@ router.get('/', function(req, res) {
     connection.query('SELECT * FROM tawe_testimonials', function(err, rows, fields) {
         if (!err) {
             testimonials = rows;
-            console.log(testimonials);
-            return testimonials;
-            // console.log(rows);
-            // testimonials = rows.testimonials;
+
+            res.render('index', {
+                title: 'Tawe',
+                description: 'Tawe transforms a humble image into a dazzling presentation or video.',
+                testimonials: testimonials
+            });
         }
         if (err) {
             console.log('Error performing database query.');
@@ -38,11 +40,6 @@ router.get('/', function(req, res) {
     });
 
 
-  res.render('index', {
-      title: 'Tawe',
-      description: 'Tawe transforms a humble image into a dazzling presentation or video.',
-      testimonials: testimonials
-  });
 });
 
 module.exports = router;

@@ -104,8 +104,6 @@ header {
 
             ul {
                 float: right;
-                margin: 0;
-                padding: 0;
                 list-style: none;
 
                 li {
@@ -298,6 +296,37 @@ section.tawe-unlock {
 
             img {
                 max-width: 100%;
+            }
+        }
+    }
+}
+
+/* People love Tawe section */
+
+section.tawe-love {
+    .love-tawe-screen {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    ul {
+        list-style: none;
+        li {
+            margin: 10px;
+
+            .name {
+                font-weight: 900;
+            }
+
+            .quote {
+                display: none;
+            }
+
+            @media only screen and (max-width: 767px) {
+                .quote {
+                    display: inline;
+                }
             }
         }
     }

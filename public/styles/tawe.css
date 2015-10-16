@@ -60,8 +60,6 @@ header {
       padding-top: 30px; }
       header .menu nav ul {
         float: right;
-        margin: 0;
-        padding: 0;
         list-style: none; }
         header .menu nav ul li {
           display: inline-block;
@@ -191,6 +189,21 @@ section.tawe-unlock {
       max-width: 25%; }
       section.tawe-unlock .love-item img {
         max-width: 100%; } }
+
+/* People love Tawe section */
+section.tawe-love .love-tawe-screen img {
+  max-width: 100%; }
+section.tawe-love ul {
+  list-style: none; }
+  section.tawe-love ul li {
+    margin: 10px; }
+    section.tawe-love ul li .name {
+      font-weight: 900; }
+    section.tawe-love ul li .quote {
+      display: none; }
+    @media only screen and (max-width: 767px) {
+      section.tawe-love ul li .quote {
+        display: inline; } }
 
 /* Tawe community section */
 section.tawe-community {

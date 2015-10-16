@@ -19,8 +19,6 @@
         <header>
             <h1><a href="#"><%= title %></a></h1>
 
-            <%= testimonials %>
-
             <div class="menu-icon" onclick="toggleMenu();">
                 <a><i class="fa fa-bars"></i></a>
             </div>
@@ -82,7 +80,15 @@
                 </h2>
             </header>
 
-            STUFF ABOUT PEOPLE LOVING TAW IN HERE!!!
+            <div class="love-tawe-screen">
+                <img src="/images/love-tawe-screen.png" alt="People just love Tawe" />
+            </div>
+
+            <ul>
+                <% testimonials.forEach(function(testimonial) { %>
+                    <li><i class="fa fa-quote-left quote"></i> <span class="testimonial"><%= testimonial.testimonial %></span> - <span class="name"><%= testimonial.name %></span></li>
+                <% }); %>
+            </ul>
         </section>
 
         <div class="clear"></div>
