@@ -1,4 +1,5 @@
 var express = require('express');
+var mysql = require('mysql');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -8,6 +9,13 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 
 var app = express();
+
+
+
+// Running database queries
+// app.get('/', function(req, res) {
+//
+// });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
